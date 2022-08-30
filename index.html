@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="div" id="div">
+        <h1 class="h1">
+            Ամանորին մնացել է
+        </h1>
+        <h2>
+
+        </h2>
+        <div class="divspan">
+            <span class="or"> Օր </span>
+            <span class="zham"> Ժամ </span>
+            <span class="rope"> Րոպե </span>
+            <span class="varkyan"> Վարկյան </span>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js"> </script>
+    <canvas width="1000" height="1000" id="fireworks-canvas" class="canvas"></canvas>
+    <script src="js/fireworks.js"></script>
+    <script>
+window.onload = function () {
+    var firework = JS_FIREWORKS.Fireworks({
+        id : 'fireworks-canvas',
+        hue : 120,
+        particleCount : 50,
+        delay : 0,
+        minDelay : 20,
+        maxDelay : 40,
+        boundaries : {
+            top: 50,
+            bottom: 240,
+            left: 50,
+            right: 590
+        },
+        fireworkSpeed : 2,
+        fireworkAcceleration : 1.05,
+        particleFriction : .95,
+        particleGravity : 1.5
+    });
+    firework.start();
+};
+    </script>
+    <script src="./js/scriptFramework.js"></script>
+</body>
+</html>
