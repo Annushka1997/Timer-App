@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".canvas").classList.add("canvas_active");
     }
 },1000);
-    time();
 });
 
 
